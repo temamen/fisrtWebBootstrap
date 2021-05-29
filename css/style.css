@@ -1,0 +1,236 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    margin:0;
+    padding:0;
+    /* color:white; */
+}
+/* //////////////////////////Header and Navbar ////////////////////////////////////////////// */
+.row{
+  padding: 20px 50px;
+}
+
+.navMenu{
+    left:100px;
+}
+
+ul li a{
+  color:white;
+}
+ul li a:hover {
+    color: #007bff;
+}
+.logoText{
+    font-size: 28px;
+    margin: 0;
+    padding: 4px 0;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color:white;
+}
+.navbar{
+  position: absolute;
+  color:white;
+  margin-top:20px 0 0 50px;
+}
+.navbar .container{
+  margin:30px 50px;
+}
+#bgHeader {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    z-index:1;
+    position: relative;
+  }
+  #bgHeader::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 130%;
+    height: 95%;
+    background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../image/bulding-bg.jpg") center top no-repeat;background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../image/bulding-bg.jpg") center top no-repeat;
+    /* background: url("../image/bulding-bg.jpg") center top no-repeat;
+    z-index: 1; */
+    border-radius: 0 0 50% 50%;
+    transform: translateX(-50%) rotate(0deg);
+  }
+  #bgHeader::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 130%;
+    height: 96%;
+    background: #68A4C4;
+    opacity: 0.3;
+    z-index: 0;
+    border-radius: 0 0 50% 50%;
+    transform: translateX(-50%) translateY(18px) rotate(2deg);
+  }
+  /* ////////////////////carsoul///////////// */
+  .btn-get-started {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: #fff;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    border: 2px solid #68A4C4;
+}
+  
+   .carousel-item {
+    min-height: 500px; 
+    height: 100%;
+    width:100%; 
+  }
+  
+  .carousel-caption button {
+    border-color: #00bfff;
+    margin-top: 1em; 
+  }
+  .carousel-control-next {
+    right: 70px;
+    top: 200px;
+}
+.carousel-control-prev {
+    left: 70px;
+    top: 200px;
+}
+.carousel-caption{
+    top: 200px;
+}
+.carousel-item p {
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    padding: 10px 100px;
+    font-size: 18px;
+    /* width:80% */
+}
+
+.navbar-expand-sm .navbar-nav .nav-link{
+    font-size: 17px;
+}  
+/* /////////////////////Container for containt////////////////////////// */
+.spacer5 {
+    height: 50px;
+  }
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+/* ///////////////////////////////////Section Two////////////////////////////////// */
+.secTwo{
+    padding-left:20px;
+}
+/* .secTwo .secCard{
+    padding: 50px;
+} */
+.changeCardText{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 100;
+    padding: 27px 0 1px;
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.text-center{
+    text-align: center;
+    margin:40px auto;
+    
+}
+footer .text-center{
+  text-align: center;
+  margin-bottom: 0;
+  
+}
+/* //////////////////// Section1 With Big Image ///////////////// */
+/* .card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+} */
+  /* Animation delays */
+  /* .carousel-caption h3:first-child {
+    animation-delay: 1s;
+  }
+  .carousel-caption h3:nth-child(2) {
+    animation-delay: 2s;
+  }
+  .carousel-caption button {
+    animation-delay: 3s;
+  } */
+  
+ /* Media Query */
+ @media (max-width:1125px){
+  nav .navMenu{
+    display: none;
+    
+}
+   .card{
+     margin-bottom: 15px;
+   }
+   .logo.col {
+    width: 40%;
+    padding-left: 30%;
+    color: #2b546b;
+}
+ 
+   
+     .bigImgSec .flex-row{
+         display: flex;
+         flex-direction: column!important
+         
+     }
+     .bigImgSec img{
+             width:500px;
+            
+         }
+     }
+    /* .col-xl-2{
+        width:40%;
+    } */
+ 
+ @media (max-width: 990px),(max-width: 576px) { 
+   nav .navMenu{
+        display: none;
+        
+    }
+    .card{
+      margin-bottom: 15px;
+    }
+    .img-fluid {
+     max-width: 250px;
+     height: 300px;
+ }
+    .carousel-caption, .carousel-control-next , .carousel-control-prev {
+        top: 150px;
+    }
+    .navbar-expand-sm .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: 0;
+        font-size: 14px;
+    }
+    
+
+  }
+  @media (min-width: 375px){
+    .logo.col {
+      width: 40%;
+      color: #2b546b;
+  }
+  /* .logoText{
+    color: #2b546b;
+  } */
+  .bgHeader {
+    display: none;
+  }
+}
+ 
